@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer repositorio | Edición de contenidos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1 id="site-title">Mi web básica</h1>
+      <p id="site-subtitle">Contenido editable para colaborar en equipo.</p>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Vista pública</h2>
+        <article>
+          <h3 id="article-title">Título del artículo</h3>
+          <p id="article-body">
+            Este texto simula el contenido principal de la página. Puedes editarlo desde el panel y guardarlo en el navegador.
+          </p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Editor de contenidos</h2>
+        <form id="content-form" class="editor-form">
+          <label for="title-input">Título del artículo</label>
+          <input id="title-input" name="title" type="text" maxlength="80" required />
+
+          <label for="body-input">Texto del artículo</label>
+          <textarea id="body-input" name="body" rows="6" maxlength="400" required></textarea>
+
+          <div class="actions">
+            <button type="submit">Guardar cambios</button>
+            <button type="button" id="reset-btn" class="secondary">Restablecer</button>
+          </div>
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
